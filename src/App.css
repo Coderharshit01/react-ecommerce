@@ -1,0 +1,66 @@
+@keyframes float {
+    0%,100% { transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+}
+
+.animate-float{
+    animation: float 4s ease-in-out infinite;
+}
+.hover-glow:hover {
+    filter: drop-shadow(0 0 20px rgba(236, 72, 153, 0.6));
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  .button-gradient:hover {
+    background-position: right center;
+    transition: background-position 0.5s ease;
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+.fade-in{
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.coral{
+    color: #FF6F61;
+}
+@keyframes bubble-animation {
+    0% {
+      border-radius: 30% 40% 20% 50% / 40% 30% 50% 30%;
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      border-radius: 40% 50% 30% 60% / 30% 50% 60% 40%;
+      transform: scale(1.05) rotate(5deg);
+    }
+    50% {
+      border-radius: 60% 40% 50% 40% / 50% 60% 30% 50%;
+      transform: scale(1.02) rotate(0deg);
+    }
+    75% {
+      border-radius: 35% 45% 60% 35% / 45% 55% 35% 45%;
+      transform: scale(1.04) rotate(-5deg);
+    }
+    100% {
+      border-radius: 30% 40% 20% 50% / 40% 30% 50% 30%;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  .animate-bubble {
+    animation: bubble-animation 8s ease-in-out infinite;
+    transition: all 0.4s ease;
+    will-change: border-radius, transform, box-shadow, filter;
+  }
+  
+  /* ✨ Hover effect */
+  .animate-bubble:hover {
+    animation-duration: 4s; /* speed up animation */
+    transform: scale(1.1); /* slightly grow */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* soft glow */
+    filter: brightness(1.15) saturate(1.2); /* make it pop */
+  }
+  
