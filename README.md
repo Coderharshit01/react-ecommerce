@@ -113,16 +113,6 @@ src/
 
 ---
 
-## **Future Improvements**
-
-* Integrate **Stripe** or **PayPal** for real checkout
-* Save orders in **Firebase Firestore**
-* Add search and filter for products
-* Add user order history
-* Improve animations and UI polish
-
----
-
 ## **License**
 
 This project is licensed under the MIT License.
